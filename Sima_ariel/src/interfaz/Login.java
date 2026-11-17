@@ -69,6 +69,7 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jp_logo = new javax.swing.JPanel();
+        jLabelFondoLogin = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jt_usuario = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -77,6 +78,7 @@ public class Login extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -85,19 +87,26 @@ public class Login extends javax.swing.JFrame {
         setName("Jlogin"); // NOI18N
         setResizable(false);
 
-        jp_logo.setBackground(new java.awt.Color(204, 204, 204));
-        jp_logo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jp_logo.setBackground(new java.awt.Color(255, 255, 255));
         jp_logo.setDoubleBuffered(false);
+
+        jLabelFondoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/sima.png"))); // NOI18N
 
         javax.swing.GroupLayout jp_logoLayout = new javax.swing.GroupLayout(jp_logo);
         jp_logo.setLayout(jp_logoLayout);
         jp_logoLayout.setHorizontalGroup(
             jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 342, Short.MAX_VALUE)
+            .addGroup(jp_logoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelFondoLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jp_logoLayout.setVerticalGroup(
             jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jp_logoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelFondoLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -105,6 +114,11 @@ public class Login extends javax.swing.JFrame {
         jt_usuario.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
         jt_usuario.setForeground(new java.awt.Color(204, 204, 204));
         jt_usuario.setText("Escriba su nombre de usuario");
+        jt_usuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jt_usuarioActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Leelawadee", 0, 10)); // NOI18N
         jLabel1.setText("Usuario");
@@ -133,6 +147,15 @@ public class Login extends javax.swing.JFrame {
         jPasswordField1.setForeground(new java.awt.Color(204, 204, 204));
         jPasswordField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
+        jButton2.setBackground(new java.awt.Color(141, 24, 58));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Salir");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -151,7 +174,8 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(52, 52, 52))
         );
         jPanel1Layout.setVerticalGroup(
@@ -169,9 +193,10 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPasswordField1.getAccessibleContext().setAccessibleDescription("");
@@ -207,6 +232,14 @@ public class Login extends javax.swing.JFrame {
     ventana.setVisible(true);
     this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jt_usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_usuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jt_usuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -245,10 +278,12 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabelFondoLogin;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPanel jp_logo;
