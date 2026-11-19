@@ -30,57 +30,66 @@ public class Inicio extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        JBespecialidades = new javax.swing.JButton();
-        JBprofesionales = new javax.swing.JButton();
-        JBpaciente = new javax.swing.JButton();
-        JBcerrarSesion = new javax.swing.JButton();
-        JBturnos = new javax.swing.JButton();
+        JBotonMenuEspecialidades = new javax.swing.JButton();
+        JBotonMenuProfesionales = new javax.swing.JButton();
+        JBotonMenuPacientes = new javax.swing.JButton();
+        JBotonCerrarSesion = new javax.swing.JButton();
+        JBotonMenuTurnos = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        jLIconoSima = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(731, 449));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        JBespecialidades.setBackground(new java.awt.Color(214, 37, 91));
-        JBespecialidades.setForeground(new java.awt.Color(255, 255, 255));
-        JBespecialidades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/medico.png"))); // NOI18N
-        JBespecialidades.setText("Especialidades");
+        JBotonMenuEspecialidades.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonMenuEspecialidades.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonMenuEspecialidades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/medico.png"))); // NOI18N
+        JBotonMenuEspecialidades.setText("Especialidades");
 
-        JBprofesionales.setBackground(new java.awt.Color(214, 37, 91));
-        JBprofesionales.setForeground(new java.awt.Color(255, 255, 255));
-        JBprofesionales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/profesional.png"))); // NOI18N
-        JBprofesionales.setText("Profesionales");
+        JBotonMenuProfesionales.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonMenuProfesionales.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonMenuProfesionales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/profesional.png"))); // NOI18N
+        JBotonMenuProfesionales.setText("Profesionales");
 
-        JBpaciente.setBackground(new java.awt.Color(214, 37, 91));
-        JBpaciente.setForeground(new java.awt.Color(255, 255, 255));
-        JBpaciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/paciente.png"))); // NOI18N
-        JBpaciente.setText("Pacientes");
+        JBotonMenuPacientes.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonMenuPacientes.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonMenuPacientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/paciente.png"))); // NOI18N
+        JBotonMenuPacientes.setText("Pacientes");
 
-        JBcerrarSesion.setBackground(new java.awt.Color(214, 37, 91));
-        JBcerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
-        JBcerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/salir.png"))); // NOI18N
-        JBcerrarSesion.setText("Cerrar sesión");
+        JBotonCerrarSesion.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonCerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonCerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/salir.png"))); // NOI18N
+        JBotonCerrarSesion.setText("Cerrar sesión");
+        JBotonCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBotonCerrarSesionActionPerformed(evt);
+            }
+        });
 
-        JBturnos.setBackground(new java.awt.Color(214, 37, 91));
-        JBturnos.setForeground(new java.awt.Color(255, 255, 255));
-        JBturnos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/turno.png"))); // NOI18N
-        JBturnos.setText("Turnos");
+        JBotonMenuTurnos.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonMenuTurnos.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonMenuTurnos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/turno.png"))); // NOI18N
+        JBotonMenuTurnos.setText("Turnos");
 
         jLabel1.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 18)); // NOI18N
         jLabel1.setText("Menú principal");
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLIconoSima.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/iconosima.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 82, Short.MAX_VALUE)
+            .addComponent(jLIconoSima, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 82, Short.MAX_VALUE)
+            .addComponent(jLIconoSima, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -88,17 +97,17 @@ public class Inicio extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(108, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(JBpaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBotonMenuPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(JBespecialidades, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(JBotonMenuEspecialidades, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(JBprofesionales, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBotonMenuProfesionales, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(JBturnos, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(JBcerrarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(JBotonMenuTurnos, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JBotonCerrarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(121, 121, 121))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -108,7 +117,7 @@ public class Inicio extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(274, 274, 274)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(249, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -119,14 +128,14 @@ public class Inicio extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JBpaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JBespecialidades, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JBotonMenuPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JBotonMenuEspecialidades, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JBprofesionales, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JBturnos, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JBotonMenuProfesionales, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JBotonMenuTurnos, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(JBcerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(JBotonCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26))
         );
 
@@ -149,6 +158,10 @@ public class Inicio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JBotonCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBotonCerrarSesionActionPerformed
+        dispose();
+    }//GEN-LAST:event_JBotonCerrarSesionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,11 +199,12 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton JBcerrarSesion;
-    private javax.swing.JButton JBespecialidades;
-    private javax.swing.JButton JBpaciente;
-    private javax.swing.JButton JBprofesionales;
-    private javax.swing.JButton JBturnos;
+    private javax.swing.JButton JBotonCerrarSesion;
+    private javax.swing.JButton JBotonMenuEspecialidades;
+    private javax.swing.JButton JBotonMenuPacientes;
+    private javax.swing.JButton JBotonMenuProfesionales;
+    private javax.swing.JButton JBotonMenuTurnos;
+    private javax.swing.JLabel jLIconoSima;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
