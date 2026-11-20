@@ -19,7 +19,7 @@ public class imgfondo extends JPanel {
 
 @Override
     protected void paintComponent(Graphics g) {
-    ImageIcon imagenFondo = new ImageIcon(getClass().getResource ("/fondos/img/sima.png" ));
+    ImageIcon imagenFondo = new ImageIcon(getClass().getResource ("/fondos/sima.png" ));
     g.drawImage (imagenFondo.getImage () , 0, 0, getWidth(), getHeight(), null) ;
     setOpaque (false) ;
     super.paintComponent (g) ;
