@@ -27,12 +27,127 @@ public class GestionEspecialidades extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        JBotonMenuEspecialidades = new javax.swing.JButton();
+        JBotonMenuProfesionales = new javax.swing.JButton();
+        JBotonMenuPacientes = new javax.swing.JButton();
+        JBotonCerrarSesion = new javax.swing.JButton();
+        JBotonMenuTurnos = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLIconoSima = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        JBotonMenuEspecialidades.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonMenuEspecialidades.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonMenuEspecialidades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/medico.png"))); // NOI18N
+        JBotonMenuEspecialidades.setText("Especialidades");
+
+        JBotonMenuProfesionales.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonMenuProfesionales.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonMenuProfesionales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/profesional.png"))); // NOI18N
+        JBotonMenuProfesionales.setText("Profesionales");
+
+        JBotonMenuPacientes.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonMenuPacientes.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonMenuPacientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/paciente.png"))); // NOI18N
+        JBotonMenuPacientes.setText("Pacientes");
+
+        JBotonCerrarSesion.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonCerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonCerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/salir.png"))); // NOI18N
+        JBotonCerrarSesion.setText("Cerrar sesión");
+        JBotonCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBotonCerrarSesionActionPerformed(evt);
+            }
+        });
+
+        JBotonMenuTurnos.setBackground(new java.awt.Color(214, 37, 91));
+        JBotonMenuTurnos.setForeground(new java.awt.Color(255, 255, 255));
+        JBotonMenuTurnos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/turno.png"))); // NOI18N
+        JBotonMenuTurnos.setText("Turnos");
+
+        jLabel1.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 18)); // NOI18N
+        jLabel1.setText("Menú principal");
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 82, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 54, Short.MAX_VALUE)
+        );
+
+        jLIconoSima.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/iconos/iconosima.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(JBotonMenuPacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(JBotonMenuProfesionales, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
+                    .addComponent(JBotonCerrarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(337, 337, 337))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addComponent(jLIconoSima)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabel1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JBotonMenuTurnos, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JBotonMenuEspecialidades, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLIconoSima, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JBotonMenuPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(JBotonMenuEspecialidades, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(JBotonMenuTurnos, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(JBotonMenuProfesionales, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49)
+                .addComponent(JBotonCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
 <<<<<<< HEAD
             .addGap(0, 1920, Short.MAX_VALUE)
         );
@@ -46,10 +161,23 @@ public class GestionEspecialidades extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 733, Short.MAX_VALUE)
 >>>>>>> 0a1fe24fb104ae5ecc621ac2fbc2ec5657372934
+=======
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 980, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> f631766b3b4fd3d1ae80947ea1d7bcb664027069
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JBotonCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBotonCerrarSesionActionPerformed
+        dispose();
+    }//GEN-LAST:event_JBotonCerrarSesionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -87,5 +215,14 @@ public class GestionEspecialidades extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JBotonCerrarSesion;
+    private javax.swing.JButton JBotonMenuEspecialidades;
+    private javax.swing.JButton JBotonMenuPacientes;
+    private javax.swing.JButton JBotonMenuProfesionales;
+    private javax.swing.JButton JBotonMenuTurnos;
+    private javax.swing.JLabel jLIconoSima;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

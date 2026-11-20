@@ -71,7 +71,10 @@ public class Login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
         jButton2 = new javax.swing.JButton();
+<<<<<<< HEAD
         lblfondo = new javax.swing.JLabel();
+=======
+>>>>>>> f631766b3b4fd3d1ae80947ea1d7bcb664027069
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -81,6 +84,31 @@ public class Login extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(800, 500));
         setResizable(false);
 
+<<<<<<< HEAD
+=======
+        jp_logo.setBackground(new java.awt.Color(255, 255, 255));
+        jp_logo.setDoubleBuffered(false);
+
+        jLabelFondoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondos/img/sima.png"))); // NOI18N
+
+        javax.swing.GroupLayout jp_logoLayout = new javax.swing.GroupLayout(jp_logo);
+        jp_logo.setLayout(jp_logoLayout);
+        jp_logoLayout.setHorizontalGroup(
+            jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jp_logoLayout.createSequentialGroup()
+                .addGap(113, 113, 113)
+                .addComponent(jLabelFondoLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jp_logoLayout.setVerticalGroup(
+            jp_logoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_logoLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jLabelFondoLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+>>>>>>> f631766b3b4fd3d1ae80947ea1d7bcb664027069
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jt_usuario.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
@@ -176,7 +204,11 @@ public class Login extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(77, 77, 77)
+=======
+                .addGap(22, 22, 22)
+>>>>>>> f631766b3b4fd3d1ae80947ea1d7bcb664027069
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lblfondo, javax.swing.GroupLayout.DEFAULT_SIZE, 393, Short.MAX_VALUE)
@@ -190,7 +222,16 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(92, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+<<<<<<< HEAD
                 .addComponent(lblfondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38))
+                    .addComponent(jp_logo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> f631766b3b4fd3d1ae80947ea1d7bcb664027069
                 .addContainerGap())
         );
 
