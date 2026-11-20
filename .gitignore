@@ -1,0 +1,6 @@
+# Archivos compilados de Java
+*.class
+
+# Carpetas de compilación NetBeans
+Sima_ariel/build/
+Sima_ariel/dist/
