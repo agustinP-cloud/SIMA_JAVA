@@ -5,10 +5,7 @@
  */
 package interfaz;
 
-/**
- *
- * @author Ariel Jurado
- */
+import javax.swing.JFrame;
 public class GestionProfesionales extends javax.swing.JFrame {
 
     /**
@@ -16,6 +13,7 @@ public class GestionProfesionales extends javax.swing.JFrame {
      */
     public GestionProfesionales() {
         initComponents();
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
@@ -33,11 +31,11 @@ public class GestionProfesionales extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 1297, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 533, Short.MAX_VALUE)
         );
 
         pack();
