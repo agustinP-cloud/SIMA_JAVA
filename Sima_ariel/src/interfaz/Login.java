@@ -20,7 +20,6 @@ public class Login extends javax.swing.JFrame {
     initComponents();
     getContentPane().setBackground(new java.awt.Color(255, 255, 255));
     setLocationRelativeTo(null);
-    this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     
     
     
